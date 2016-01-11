@@ -88,6 +88,7 @@
   }
 
   ZoomService.prototype._clickHandler = function (e) {
+    if (e.which == 3) return
     if (e.preventDefault) e.preventDefault()
     else event.returnValue = false
 
